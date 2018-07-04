@@ -10,7 +10,7 @@ if [ ! -n "$RESULT_200" ]; then
 fi
 
 #if [ -n "$RESULT_502" ]; then
-#cd /srv/ruang-ng/universal-prod/dist;PORT=4000 nodemon server.js &
+#cd /srv/[nama_file]/universal-prod/dist;PORT=4000 nodemon server.js &
 #/etc/init.d/supervisor stop;/etc/init.d/supervisor start
 #  echo "Restarted supervisor, 502 at `TZ=Asia/Jakarta date +'%Y-%m-%d %H:%M:%S'                                                                                        `." >> /var/log/spv_restarter.log
 #elif [ -n "$RESULT_504" ]; then
