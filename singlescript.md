@@ -25,5 +25,5 @@ check the size and total file in the bucket s3 *aws s3 ls s3://mybucket --recurs
 COPY <table_name>(<row_header>)
 from '<csv_path>' DELIMITER ',' CSV HEADER;
 
-# How to import header from csv to table database at mysql
+# How to import header from csv to table database at mysql (for input bulk)
 LOAD DATA INFILE '<csv_path>' INTO table <table_name> Fields terminated by ',' ENclosed by '"' Lines terminated by '\n' Ignore 1 ROWS;
