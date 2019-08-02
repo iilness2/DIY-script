@@ -24,3 +24,6 @@ check the size and total file in the bucket s3 *aws s3 ls s3://mybucket --recurs
 # How to import header from csv to table database at postgresql
 COPY <table_name>(<row_header>)
 from '<csv_path>' DELIMITER ',' CSV HEADER;
+
+# How to import header from csv to table database at mysql
+LOAD DATA INFILE '<csv_path>' INTO table <table_name> Fields terminated by ',' ENclosed by '"' Lines terminated by '\n' Ignore 1 ROWS;
