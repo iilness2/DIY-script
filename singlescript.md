@@ -20,3 +20,7 @@ check the size and total file in the bucket s3 *aws s3 ls s3://mybucket --recurs
     println ("${plugin.getDisplayName()} (${plugin.getShortName()}): ${plugin.getVersion()}")
 }
 ```
+
+# How to import header from csv to table database at postgresql
+COPY <table_name>(<row_header>)
+from '<csv_path>' DELIMITER ',' CSV HEADER;
